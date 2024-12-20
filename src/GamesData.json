@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "genre": "Action-adventure",
+    "releaseDate": "2017-03-03",
+    "price": 59.99,
+    "rating": 4.9
+  },
+  {
+    "id": 2,
+    "title": "Super Mario Odyssey",
+    "genre": "Platform",
+    "releaseDate": "2017-10-27",
+    "price": 59.99,
+    "rating": 4.8
+  },
+  {
+    "id": 3,
+    "title": "Minecraft",
+    "genre": "Sandbox, Survival",
+    "releaseDate": "2011-11-18",
+    "price": 26.95,
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "title": "The Witcher 3: Wild Hunt",
+    "genre": "Action RPG",
+    "releaseDate": "2015-05-19",
+    "price": 39.99,
+    "rating": 4.9
+  },
+  {
+    "id": 5,
+    "title": "Red Dead Redemption 2",
+    "genre": "Action-adventure",
+    "releaseDate": "2018-10-26",
+    "price": 59.99,
+    "rating": 4.8
+  },
+  {
+    "id": 6,
+    "title": "Fortnite",
+    "genre": "Battle Royale",
+    "releaseDate": "2017-07-21",
+    "price": 0.00,
+    "rating": 4.6
+  },
+  {
+    "id": 7,
+    "title": "Overwatch",
+    "genre": "First-person shooter",
+    "releaseDate": "2016-05-24",
+    "price": 39.99,
+    "rating": 4.5
+  },
+  {
+    "id": 8,
+    "title": "Apex Legends",
+    "genre": "Battle Royale",
+    "releaseDate": "2019-02-04",
+    "price": 0.00,
+    "rating": 4.4
+  },
+  {
+    "id": 9,
+    "title": "Call of Duty: Modern Warfare",
+    "genre": "First-person shooter",
+    "releaseDate": "2019-10-25",
+    "price": 59.99,
+    "rating": 4.7
+  },
+  {
+    "id": 10,
+    "title": "Cyberpunk 2077",
+    "genre": "Action RPG",
+    "releaseDate": "2020-12-10",
+    "price": 59.99,
+    "rating": 4.2
+  },
+  {
+    "id": 11,
+    "title": "Animal Crossing: New Horizons",
+    "genre": "Simulation",
+    "releaseDate": "2020-03-20",
+    "price": 59.99,
+    "rating": 4.9
+  },
+  {
+    "id": 12,
+    "title": "Among Us",
+    "genre": "Party",
+    "releaseDate": "2018-06-15",
+    "price": 4.99,
+    "rating": 4.5
+  },
+  {
+    "id": 13,
+    "title": "Hades",
+    "genre": "Roguelike",
+    "releaseDate": "2020-09-17",
+    "price": 24.99,
+    "rating": 4.8
+  },
+  {
+    "id": 14,
+    "title": "Ghost of Tsushima",
+    "genre": "Action-adventure",
+    "releaseDate": "2020-07-17",
+    "price": 59.99,
+    "rating": 4.9
+  },
+  {
+    "id": 15,
+    "title": "Doom Eternal",
+    "genre": "First-person shooter",
+    "releaseDate": "2020-03-20",
+    "price": 59.99,
+    "rating": 4.7
+  },
+  {
+    "id": 16,
+    "title": "Final Fantasy VII Remake",
+    "genre": "Action RPG",
+    "releaseDate": "2020-04-10",
+    "price": 59.99,
+    "rating": 4.8
+  },
+  {
+    "id": 17,
+    "title": "Persona 5 Royal",
+    "genre": "JRPG",
+    "releaseDate": "2020-03-31",
+    "price": 59.99,
+    "rating": 4.9
+  },
+  {
+    "id": 18,
+    "title": "Half-Life: Alyx",
+    "genre": "VR",
+    "releaseDate": "2020-03-23",
+    "price": 59.99,
+    "rating": 4.9
+  },
+  {
+    "id": 19,
+    "title": "Resident Evil 3",
+    "genre": "Survival horror",
+    "releaseDate": "2020-04-03",
+    "price": 59.99,
+    "rating": 4.4
+  },
+  {
+    "id": 20,
+    "title": "Sekiro: Shadows Die Twice",
+    "genre": "Action-adventure",
+    "releaseDate": "2019-03-22",
+    "price": 59.99,
+    "rating": 4.8
+  },
+  {
+    "id": 21,
+    "title": "Control",
+    "genre": "Action-adventure",
+    "releaseDate": "2019-08-27",
+    "price": 39.99,
+    "rating": 4.6
+  },
+  {
+    "id": 22,
+    "title": "Death Stranding",
+    "genre": "Action",
+    "releaseDate": "2019-11-08",
+    "price": 59.99,
+    "rating": 4.5
+  },
+  {
+    "id": 23,
+    "title": "Genshin Impact",
+    "genre": "Action RPG",
+    "releaseDate": "2020-09-28",
+    "price": 0.00,
+    "rating": 4.7
+  },
+  {
+    "id": 24,
+    "title": "Valorant",
+    "genre": "First-person shooter",
+    "releaseDate": "2020-06-02",
+    "price": 0.00,
+    "rating": 4.6
+  },
+  {
+    "id": 25,
+    "title": "League of Legends",
+    "genre": "MOBA",
+    "releaseDate": "2009-10-27",
+    "price": 0.00,
+    "rating": 4.5
+  },
+  {
+    "id": 26,
+    "title": "World of Warcraft",
+    "genre": "MMORPG",
+    "releaseDate": "2004-11-23",
+    "price": 14.99,
+    "rating": 4.7
+  },
+  {
+    "id": 27,
+    "title": "The Elder Scrolls V: Skyrim",
+    "genre": "Action RPG",
+    "releaseDate": "2011-11-11",
+    "price": 39.99,
+    "rating": 4.8
+  },
+  {
+    "id": 28,
+    "title": "Dark Souls III",
+    "genre": "Action RPG",
+    "releaseDate": "2016-04-12",
+    "price": 59.99,
+    "rating": 4.7
+  },
+  {
+    "id": 29,
+    "title": "Bloodborne",
+    "genre": "Action RPG",
+    "releaseDate": "2015-03-24",
+    "price": 19.99,
+    "rating": 4.8
+  },
+  {
+    "id": 30,
+    "title": "Hollow Knight",
+    "genre": "Metroidvania",
+    "releaseDate": "2017-02-24",
+    "price": 14.99,
+    "rating": 4.9
+  }
+]
