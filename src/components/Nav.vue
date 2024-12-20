@@ -11,7 +11,7 @@
               <font-awesome-icon icon="home" class="px-1"/> Home
             </router-link>
           </li>
-          <li class="nav-item px-4">
+          <li class="nav-item">
             <router-link class="nav-link" to="/games">
               <font-awesome-icon icon="gamepad" class="px-1"/> Games
             </router-link>
