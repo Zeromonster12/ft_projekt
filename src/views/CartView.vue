@@ -1,18 +1,13 @@
-<script setup lang="ts">
-import { useCartStore } from '@/stores/CartStore';
-
-const cartStore = useCartStore();
-</script>
-
 <template>
   <main>
     <h1>Your Cart</h1>
     <div v-if="cartStore.items.length > 0">
       <ul>
-        <li v-for="item in cartStore.items" :key="item.id">
+        <li v-for="(item, index) in cartStore.items" :key="index">
           <img :src="`/images/${item.image}`" alt="Game image" width="50">
           <span>{{ item.title }}</span>
           <span>${{ item.price }}</span>
+          <button @click="cartStore.removeItem(index)">Remove</button>
         </li>
       </ul>
     </div>
@@ -21,6 +16,21 @@ const cartStore = useCartStore();
     </div>
   </main>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+import { useCartStore } from '@/stores/CartStore';
+
+export default defineComponent({
+  name: "CartView",
+  data() {
+    const cartStore = useCartStore();
+    return {
+      cartStore,
+    };
+  }
+});
+</script>
 
 <style scoped>
 main {

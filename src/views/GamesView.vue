@@ -1,7 +1,15 @@
 <template>
   <div class="games-view">
     <div class="row justify-content-center mx-5 mt-5 games-container">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" v-for="game in games" :key="game.id">
+      <div class="col-12 mb-4 search-container">
+        <input
+          type="text"
+          v-model="searchQuery"
+          placeholder="Search games..."
+          class="form-control search-bar"
+        />
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" v-for="game in filteredGames" :key="game.id">
         <GameCard @card-click="showGameDetails" @add-to-cart="addToCart" :game="game" />
       </div>
     </div>
@@ -19,12 +27,20 @@ export default defineComponent({
   components: {
     GameCard
   },
-  setup() {
+  data() {
     const cartStore = useCartStore();
     return {
       games: gamesData,
-      cartStore
+      cartStore,
+      searchQuery: ''
     };
+  },
+  computed: {
+    filteredGames() {
+      return this.games.filter(game =>
+        game.title.toLowerCase().includes(this.searchQuery.toLowerCase())
+      );
+    }
   },
   methods: {
     showGameDetails(game) {
@@ -37,4 +53,8 @@ export default defineComponent({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.form-control {
+  margin-bottom: 20px;
+}
+</style>

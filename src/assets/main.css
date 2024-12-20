@@ -7,18 +7,20 @@
 }
 
 body {
-    background-color: #fafafa !important;
+    background-color: #f9ffee !important;
 }
 
 nav {
     background-color: #daff85;
     color: black;
     min-height: 75px;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 1);
+    border-radius: 0 0 20px 20px;
 }
 
 nav a {
     color: rgb(0, 0, 0) !important;
-    background-color: #abf600 !important;
+    background-color: #ffffff !important;
     border: solid 1px #000000 !important;
     font-size: 18px !important;
     font-weight: 600 !important;
@@ -104,4 +106,22 @@ color: white !important;
 border-radius: 30px;
 transition: 0.2s ease-in-out !important;
 }
+
+.search-container {
+    background-color: #daff85;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 1);
+    border: solid 1px #000000;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: solid 1px #000000;
+    margin-bottom: 0px !important;
+}
+
 

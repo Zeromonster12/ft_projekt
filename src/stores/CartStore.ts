@@ -12,5 +12,11 @@ export const useCartStore = defineStore('cart', () => {
     return items.value.length;
   }
 
-  return { items, addItem, getItemCount };
+  function removeItem(index) {
+    if (index >= 0 && index < items.value.length) {
+      items.value.splice(index, 1); // Remove the item at the specified index
+    }
+  }
+
+  return { items, addItem, getItemCount, removeItem };
 });

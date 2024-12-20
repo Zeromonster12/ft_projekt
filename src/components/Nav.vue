@@ -5,8 +5,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item px-5">
+        <ul class="navbar-nav mx-4">
+          <li class="nav-item px-3">
             <router-link class="nav-link" to="/">
               <font-awesome-icon icon="home" class="px-1"/> Home
             </router-link>

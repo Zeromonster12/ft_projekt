@@ -4,7 +4,7 @@
     <div class="card-body">
       <h5 class="card-title">{{ game.title }}</h5>
       <p class="card-text">Genre: {{ game.genre }}</p>
-      <p class="card-text">Price: ${{ game.price }}</p>
+      <p class="card-text">Price: {{ game.price }}€</p>
       <button class="btn btn-add-to-cart mt-3" @click.stop="handleButtonClick">Add to Cart</button>
     </div>
   </div>
