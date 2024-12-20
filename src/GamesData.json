@@ -5,7 +5,8 @@
     "genre": "Action-adventure",
     "releaseDate": "2017-03-03",
     "price": 59.99,
-    "rating": 4.9
+    "rating": 4.9,
+    "image": "zelda.jpg"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "genre": "Platform",
     "releaseDate": "2017-10-27",
     "price": 59.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "image": "mario.jpg"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "genre": "Sandbox, Survival",
     "releaseDate": "2011-11-18",
     "price": 26.95,
-    "rating": 4.7
+    "rating": 4.7,
+    "image": "minecraft.jpg"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "genre": "Action RPG",
     "releaseDate": "2015-05-19",
     "price": 39.99,
-    "rating": 4.9
+    "rating": 4.9,
+    "image": "witcher3.jpg"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "genre": "Action-adventure",
     "releaseDate": "2018-10-26",
     "price": 59.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "image": "reddead2.jpg"
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "genre": "Battle Royale",
     "releaseDate": "2017-07-21",
     "price": 0.00,
-    "rating": 4.6
+    "rating": 4.6,
+    "image": "fortnite.jpg"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "genre": "First-person shooter",
     "releaseDate": "2016-05-24",
     "price": 39.99,
-    "rating": 4.5
+    "rating": 4.5,
+    "image": "overwatch.jpg"
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "genre": "Battle Royale",
     "releaseDate": "2019-02-04",
     "price": 0.00,
-    "rating": 4.4
+    "rating": 4.4,
+    "image": "apex.jpg"
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "genre": "First-person shooter",
     "releaseDate": "2019-10-25",
     "price": 59.99,
-    "rating": 4.7
+    "rating": 4.7,
+    "image": "codmw.jpg"
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "genre": "Action RPG",
     "releaseDate": "2020-12-10",
     "price": 59.99,
-    "rating": 4.2
+    "rating": 4.2,
+    "image": "cyberpunk.jpg"
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "genre": "Simulation",
     "releaseDate": "2020-03-20",
     "price": 59.99,
-    "rating": 4.9
+    "rating": 4.9,
+    "image": "animalcrossing.jpg"
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "genre": "Party",
     "releaseDate": "2018-06-15",
     "price": 4.99,
-    "rating": 4.5
+    "rating": 4.5,
+    "image": "amongus.jpg"
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "genre": "Roguelike",
     "releaseDate": "2020-09-17",
     "price": 24.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "image": "hades.jpg"
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "genre": "Action-adventure",
     "releaseDate": "2020-07-17",
     "price": 59.99,
-    "rating": 4.9
+    "rating": 4.9,
+    "image": "ghost.jpg"
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "genre": "First-person shooter",
     "releaseDate": "2020-03-20",
     "price": 59.99,
-    "rating": 4.7
+    "rating": 4.7,
+    "image": "doom.jpg"
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "genre": "Action RPG",
     "releaseDate": "2020-04-10",
     "price": 59.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "image": "ff7.jpg"
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "genre": "JRPG",
     "releaseDate": "2020-03-31",
     "price": 59.99,
-    "rating": 4.9
+    "rating": 4.9,
+    "image": "persona5.jpg"
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "genre": "VR",
     "releaseDate": "2020-03-23",
     "price": 59.99,
-    "rating": 4.9
+    "rating": 4.9,
+    "image": "halflife.jpg"
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "genre": "Survival horror",
     "releaseDate": "2020-04-03",
     "price": 59.99,
-    "rating": 4.4
+    "rating": 4.4,
+    "image": "re3.jpg"
   },
   {
     "id": 20,
@@ -157,7 +176,8 @@
     "genre": "Action-adventure",
     "releaseDate": "2019-03-22",
     "price": 59.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "image": "sekiro.jpg"
   },
   {
     "id": 21,
@@ -165,7 +185,8 @@
     "genre": "Action-adventure",
     "releaseDate": "2019-08-27",
     "price": 39.99,
-    "rating": 4.6
+    "rating": 4.6,
+    "image": "control.jpg"
   },
   {
     "id": 22,
@@ -173,7 +194,8 @@
     "genre": "Action",
     "releaseDate": "2019-11-08",
     "price": 59.99,
-    "rating": 4.5
+    "rating": 4.5,
+    "image": "deathstranding.jpg"
   },
   {
     "id": 23,
@@ -181,7 +203,8 @@
     "genre": "Action RPG",
     "releaseDate": "2020-09-28",
     "price": 0.00,
-    "rating": 4.7
+    "rating": 4.7,
+    "image": "genshin.jpg"
   },
   {
     "id": 24,
@@ -189,7 +212,8 @@
     "genre": "First-person shooter",
     "releaseDate": "2020-06-02",
     "price": 0.00,
-    "rating": 4.6
+    "rating": 4.6,
+    "image": "valorant.jpg"
   },
   {
     "id": 25,
@@ -197,7 +221,8 @@
     "genre": "MOBA",
     "releaseDate": "2009-10-27",
     "price": 0.00,
-    "rating": 4.5
+    "rating": 4.5,
+    "image": "lol.jpg"
   },
   {
     "id": 26,
@@ -205,7 +230,8 @@
     "genre": "MMORPG",
     "releaseDate": "2004-11-23",
     "price": 14.99,
-    "rating": 4.7
+    "rating": 4.7,
+    "image": "wow.jpg"
   },
   {
     "id": 27,
@@ -213,7 +239,8 @@
     "genre": "Action RPG",
     "releaseDate": "2011-11-11",
     "price": 39.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "image": "skyrim.jpg"
   },
   {
     "id": 28,
@@ -221,7 +248,8 @@
     "genre": "Action RPG",
     "releaseDate": "2016-04-12",
     "price": 59.99,
-    "rating": 4.7
+    "rating": 4.7,
+    "image": "darksouls3.jpg"
   },
   {
     "id": 29,
@@ -229,14 +257,16 @@
     "genre": "Action RPG",
     "releaseDate": "2015-03-24",
     "price": 19.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "image": "bloodborne.jpg"
   },
   {
     "id": 30,
-    "title": "Hollow Knight",
-    "genre": "Metroidvania",
-    "releaseDate": "2017-02-24",
-    "price": 14.99,
-    "rating": 4.9
+    "title": "Elden Ring",
+    "genre": "Action RPG",
+    "releaseDate": "2022-02-25",
+    "price": 59.99,
+    "rating": 4.9,
+    "image": "eldenring.jpg"
   }
 ]

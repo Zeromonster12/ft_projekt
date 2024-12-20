@@ -1,2 +1,105 @@
+/* filepath: /e:/ft_projekt/src/assets/main.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import './base.css';
+
+* {
+    font-family: 'Monsterrat', sans-serif !important;
+}
+
+body {
+    background-color: #fafafa !important;
+}
+
+nav {
+    background-color: abf600;
+    color: black;
+    min-height: 75px;
+}
+
+nav a {
+    color: rgb(0, 0, 0) !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    border-radius: 30px;
+    border: solid 0px #ffffff !important;
+    transition: 0.2s ease-in-out !important;
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0) !important;
+    background-color: #abf600;
+    border: solid 1px #000000 !important;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out !important;
+}
+
+.card {
+    background-color: #f2fed1 !important;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 1);
+    border-radius: 15px !important;
+    border: solid 1px #000000 !important;
+    transition: 0.2s ease-in-out !important;
+}
+
+.card:hover{
+    box-shadow: 0 7px 0 rgba(0, 0, 0, 1);
+    scale: 1.1;
+    border-radius: 15px !important;
+    border: solid 1px #000000 !important;
+    transition: 0.2s ease-in-out !important;
+}
+
+.card img {
+    border-radius: 15px 15px 0 0 !important;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.games-view {
+    display: flex;
+    justify-content: center;
+}
+
+.games-container {
+max-width: 1200px;
+width: 100%;
+}
+.card-body {
+height: 170px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.card-title {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.card-text {
+margin-bottom: 0;
+}
+
+.badge {
+background-color: #b3ff00;
+color: black !important;
+border: solid 1px #000000 !important;
+}
+
+.btn-add-to-cart {
+background-color: #b3ff00 !important;
+color: black !important;
+border: solid 1px #000000 !important;
+border-radius: 30px !important;
+transition: 0.2s ease-in-out !important;
+}
+
+.btn-add-to-cart:hover {
+background-color: #000000 !important;
+border: solid 1px #000000 !important;
+color: white !important;
+border-radius: 30px;
+transition: 0.2s ease-in-out !important;
+}
 
