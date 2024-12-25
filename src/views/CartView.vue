@@ -1,19 +1,27 @@
 <template>
-  <main>
-    <h1>Your Cart</h1>
-    <CartItemList />
-    <div v-if="cartStore.items.length > 0">
-      <div class="cart-summary">
-        <p>Total Price: ${{ totalPrice }}</p>
-        <button @click="checkout" class="btn btn-primary">Proceed to Checkout</button>
-        <button @click="clearCart" class="btn btn-danger">Empty Cart</button>
+  <main class="container mt-5 d-flex justify-content-center">
+    <div class="row w-100">
+      <div v-if="cartStore.items.length > 0" class="col-12 col-md-8">
+        <CartItemList />
+      </div>
+      <div v-if="cartStore.items.length > 0" class="col-12 col-md-4">
+        <div class="p-3">
+          <p class="h5 mb-5"><strong>Total Price:</strong> ${{ cartStore.totalPrice }}</p>
+          <button @click="checkout" class="btn btn-primary mb-2 w-100">Proceed to Checkout</button>
+          <button @click="cartStore.clearCart" class="btn btn-danger w-100">Empty Cart</button>
+        </div>
+      </div>
+      <div v-else class="col-12">
+        <div class="alert alert-warning" role="alert">
+          Your cart is empty.
+        </div>
       </div>
     </div>
   </main>
 </template>
 
 <script lang="ts">
-import { defineComponent} from 'vue';
+import { defineComponent } from 'vue';
 import { useCartStore } from '@/stores/CartStore';
 import CartItemList from '@/components/CartItemList.vue';
 
@@ -23,47 +31,20 @@ export default defineComponent({
     CartItemList
   },
   data() {
-    const cartStore = useCartStore();
     return {
-      cartStore
+      cartStore: useCartStore()
     };
-  },
-  computed: {
-    totalPrice() {
-      return this.cartStore.totalPrice();
-    }
   },
   methods: {
     checkout() {
       alert('Proceeding to checkout...');
-      // Implement checkout logic here
-    },
-    clearCart() {
-      this.cartStore.clearCart();
     }
   }
 });
 </script>
 
 <style scoped>
-main {
-  padding: 20px;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-.cart-summary {
+.card {
   margin-top: 20px;
-}
-
-.cart-summary p {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.btn {
-  margin-right: 10px;
 }
 </style>

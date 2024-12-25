@@ -141,3 +141,8 @@ nav a:hover {
     padding: 30px;
     margin-bottom: 35vh;
 }
+
+.badge {
+    font-size: 12px !important;
+    padding: 4px 6.4px !important;
+  }

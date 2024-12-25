@@ -10,7 +10,7 @@
         />
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" v-for="game in filteredGames" :key="game.id">
-        <GameCard @card-click="showGameDetails" @add-to-cart="addToCart" :game="game" />
+        <GameCard @click="showGameDetails(game)" :game="game" />
       </div>
     </div>
   </div>
@@ -45,16 +45,10 @@ export default defineComponent({
   methods: {
     showGameDetails(game) {
       this.$router.push({ name: 'GameDetailView', params: { id: game.id } });
-    },
-    addToCart(game) {
-      this.cartStore.addItem(game);
     }
   }
 });
 </script>
 
 <style scoped>
-.form-control {
-  margin-bottom: 20px;
-}
 </style>

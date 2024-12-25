@@ -1,30 +1,35 @@
-import { ref } from 'vue';
 import { defineStore } from 'pinia';
 
-export const useCartStore = defineStore('cart', () => {
-  const items = ref([]);
-
-  function addItem(item) {
-    items.value.push(item);
-  }
-
-  function getItemCount() {
-    return items.value.length;
-  }
-
-  function removeItem(index) {
-    if (index >= 0 && index < items.value.length) {
-      items.value.splice(index, 1);
+export const useCartStore = defineStore({
+  id: 'cart',
+  state: () => ({
+    items: JSON.parse(localStorage.getItem('cartItems') || '[]')
+  }),
+  getters: {
+    getItemCount(state) {
+      return state.items.length;
+    },
+    totalPrice(state) {
+      return state.items.reduce((total, item) => total + item.price, 0).toFixed(2);;
+    }
+  },
+  actions: {
+    addItem(item) {
+      this.items.push(item);
+      this.saveCart();
+    },
+    removeItem(index) {
+      if (index >= 0 && index < this.items.length) {
+        this.items.splice(index, 1);
+        this.saveCart();
+      }
+    },
+    clearCart() {
+      this.items = [];
+      this.saveCart();
+    },
+    saveCart() {
+      localStorage.setItem('cartItems', JSON.stringify(this.items));
     }
   }
-
-  function clearCart() {
-    items.value = [];
-  }
-
-  function totalPrice() {
-    return items.value.reduce((total, item) => total + item.price, 0); // Calculate total price
-  }
-
-  return { items, addItem, getItemCount, removeItem, clearCart, totalPrice };
 });

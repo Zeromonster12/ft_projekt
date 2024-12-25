@@ -11,7 +11,7 @@
           <p><strong>Price:</strong> ${{ game.price }}</p>
           <p><strong>Rating:</strong> {{ game.rating }}</p>
           <p><strong>Release Date:</strong> {{ game.releaseDate }}</p>
-          <button @click="addItem()" class="btn btn-primary mt-4">Add to Cart</button>
+          <button @click="cartStore.addItem(game)" class="btn btn-add-to-cart mt-4">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -35,10 +35,9 @@ export default defineComponent({
     }
   },
   data() {
-    const cartStore = useCartStore();
     return {
       game: null,
-      cartStore
+      cartStore: useCartStore()
     };
   },
   created() {
