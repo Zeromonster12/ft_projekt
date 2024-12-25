@@ -11,7 +11,7 @@
                 <small>${{ item.price }}</small>
               </div>
             </div>
-            <button @click="removeItem(index)" class="btn btn-danger btn-sm">Remove</button>
+            <button @click="removeItem(index)" class="btn btn-remove-item btn-sm">Remove</button>
           </li>
         </ul>
       </div>
