@@ -12,7 +12,7 @@
         </div>
       </div>
       <div v-else class="col-12">
-        <div class="alert alert-warning" role="alert">
+        <div class="alert alert-empty-cart" role="alert">
           Your cart is empty.
         </div>
       </div>

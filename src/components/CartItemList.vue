@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-content-center">
+  <div class="row justify-content-center cart-item-list">
     <div class="col-12 col-md-6">
       <div v-if="items.length > 0">
         <ul class="list-group">
@@ -45,8 +45,5 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.img-thumbnail {
-  max-height: 50px;
-  object-fit: cover;
-}
+
 </style>
