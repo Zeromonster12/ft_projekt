@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import GamesView from '@/views/GamesView.vue';
 import CartView from '@/views/CartView.vue';
-import GameDetails from '@/components/Game.vue';
+import GameDetailView from '@/views/GameDetailView.vue';
 
 const routes = [
   {
@@ -17,8 +17,8 @@ const routes = [
   },
   {
     path: '/games/:id',
-    name: 'GameDetails',
-    component: GameDetails,
+    name: 'GameDetailView',
+    component: GameDetailView,
     props: true,
   },
   {

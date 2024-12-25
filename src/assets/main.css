@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f9ffee !important;
+    background-color: #fafafa !important;
 }
 
 nav {
@@ -65,46 +65,46 @@ nav a:hover {
 }
 
 .games-container {
-max-width: 1200px;
-width: 100%;
+    max-width: 1200px;
+    width: 100%;
 }
 .card-body {
-height: 170px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-title {
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-text {
-margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .badge {
-background-color: #b3ff00;
-color: black !important;
-border: solid 1px #000000 !important;
+    background-color: #191a23;
+    color: white !important;
+    border: solid 1px #000000 !important;
 }
 
 .btn-add-to-cart {
-background-color: #b3ff00 !important;
-color: black !important;
-border: solid 1px #000000 !important;
-border-radius: 30px !important;
-transition: 0.2s ease-in-out !important;
+    background-color: #b3ff00 !important;
+    color: black !important;
+    border: solid 1px #000000 !important;
+    border-radius: 30px !important;
+    transition: 0.2s ease-in-out !important;
 }
 
 .btn-add-to-cart:hover {
-background-color: #000000 !important;
-border: solid 1px #000000 !important;
-color: white !important;
-border-radius: 30px;
-transition: 0.2s ease-in-out !important;
+    background-color: #000000 !important;
+    border: solid 1px #000000 !important;
+    color: white !important;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out !important;
 }
 
 .search-container {
@@ -124,4 +124,20 @@ transition: 0.2s ease-in-out !important;
     margin-bottom: 0px !important;
 }
 
+.footer {
+    background-color: #191a23;
+    color: #fff;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
 
+.game-detail-view-container {
+    background-color: #f2fed1 !important;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 1);
+    border-radius: 15px !important;
+    border: solid 1px #000000 !important;
+    padding: 30px;
+    margin-bottom: 35vh;
+}

@@ -2,10 +2,10 @@ import { ref } from 'vue';
 import { defineStore } from 'pinia';
 
 export const useCartStore = defineStore('cart', () => {
-  const items = ref([]); // Ensure items is a reactive reference
+  const items = ref([]);
 
   function addItem(item) {
-    items.value.push(item); // Access items.value
+    items.value.push(item);
   }
 
   function getItemCount() {
@@ -14,9 +14,17 @@ export const useCartStore = defineStore('cart', () => {
 
   function removeItem(index) {
     if (index >= 0 && index < items.value.length) {
-      items.value.splice(index, 1); // Remove the item at the specified index
+      items.value.splice(index, 1);
     }
   }
 
-  return { items, addItem, getItemCount, removeItem };
+  function clearCart() {
+    items.value = [];
+  }
+
+  function totalPrice() {
+    return items.value.reduce((total, item) => total + item.price, 0); // Calculate total price
+  }
+
+  return { items, addItem, getItemCount, removeItem, clearCart, totalPrice };
 });

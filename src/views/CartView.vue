@@ -1,33 +1,46 @@
 <template>
   <main>
     <h1>Your Cart</h1>
+    <CartItemList />
     <div v-if="cartStore.items.length > 0">
-      <ul>
-        <li v-for="(item, index) in cartStore.items" :key="index">
-          <img :src="`/images/${item.image}`" alt="Game image" width="50">
-          <span>{{ item.title }}</span>
-          <span>${{ item.price }}</span>
-          <button @click="cartStore.removeItem(index)">Remove</button>
-        </li>
-      </ul>
-    </div>
-    <div v-else>
-      <p>Your cart is empty.</p>
+      <div class="cart-summary">
+        <p>Total Price: ${{ totalPrice }}</p>
+        <button @click="checkout" class="btn btn-primary">Proceed to Checkout</button>
+        <button @click="clearCart" class="btn btn-danger">Empty Cart</button>
+      </div>
     </div>
   </main>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent} from 'vue';
 import { useCartStore } from '@/stores/CartStore';
+import CartItemList from '@/components/CartItemList.vue';
 
 export default defineComponent({
   name: "CartView",
+  components: {
+    CartItemList
+  },
   data() {
     const cartStore = useCartStore();
     return {
-      cartStore,
+      cartStore
     };
+  },
+  computed: {
+    totalPrice() {
+      return this.cartStore.totalPrice();
+    }
+  },
+  methods: {
+    checkout() {
+      alert('Proceeding to checkout...');
+      // Implement checkout logic here
+    },
+    clearCart() {
+      this.cartStore.clearCart();
+    }
   }
 });
 </script>
@@ -41,18 +54,16 @@ h1 {
   margin-bottom: 20px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.cart-summary {
+  margin-top: 20px;
 }
 
-li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+.cart-summary p {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-img {
+.btn {
   margin-right: 10px;
 }
 </style>

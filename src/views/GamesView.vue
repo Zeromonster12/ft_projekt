@@ -44,7 +44,7 @@ export default defineComponent({
   },
   methods: {
     showGameDetails(game) {
-      this.$router.push({ name: 'GameDetails', params: { id: game.id } });
+      this.$router.push({ name: 'GameDetailView', params: { id: game.id } });
     },
     addToCart(game) {
       this.cartStore.addItem(game);
