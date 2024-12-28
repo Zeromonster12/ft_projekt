@@ -295,3 +295,19 @@ border-radius: 30px !important;
     border-radius: 15px !important;
     min-width: 60px;
     }
+
+.btn-back{
+    background-color: #b3ff00 !important;
+    color: black !important;
+    border: solid 1px #000000 !important;
+    border-radius: 30px !important;
+    transition: 0.2s ease-in-out !important;
+}
+
+.btn-back:hover {
+    background-color: #000000 !important;
+    border: solid 1px #000000 !important;
+    color: white !important;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out !important;
+}

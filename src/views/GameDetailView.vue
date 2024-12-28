@@ -1,5 +1,6 @@
 <template>
   <div class="container mt-5 game-detail-view-container">
+    <BackButton />
     <div v-if="game" class="row">
       <div class="col-md-4">
         <img :src="`/images/${game.image}`" class="img-fluid mb-4 rounded-4" alt="Game image">
@@ -25,9 +26,13 @@
 import { defineComponent } from 'vue';
 import gamesData from '@/GamesData.json';
 import { useCartStore } from '@/stores/CartStore';
+import BackButton from '@/components/BackButton.vue';
 
 export default defineComponent({
   name: "GameDetailView",
+  components: {
+    BackButton
+  },
   props: {
     id: {
       type: [Number, String],
@@ -40,11 +45,11 @@ export default defineComponent({
       cartStore: useCartStore()
     };
   },
-  created() {
-    this.fetchGame();
-  },
   watch: {
-    id: 'fetchGame'
+    id: {
+      immediate: true,
+      handler: 'fetchGame'
+    }
   },
   methods: {
     fetchGame() {
