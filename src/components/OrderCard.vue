@@ -3,16 +3,16 @@
   <div class="mb-4 p-3 order-container">
     <p><strong>Order ID:</strong> {{ order.id }}</p>
     <p>
-      <strong>Status:</strong>
+      <strong>Status: </strong>
       <span :style="{ color: order.status === 'pending' ? 'red' : 'inherit' }">
         {{ order.status }}
       </span>
     </p>
     <p><strong>Created at:</strong> {{ order.createdAt }}</p>
-    <p><strong>Total:</strong> €{{ order.total }}</p>
+    <p><strong>Total:</strong> {{ order.total }}€</p>
     <ul>
       <li v-for="(item, index) in order.items" :key="index">
-        {{ item.title }} - €{{ item.price }}
+        {{ item.title }} - {{ item.price }}€
       </li>
     </ul>
   </div>

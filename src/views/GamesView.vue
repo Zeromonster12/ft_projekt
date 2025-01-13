@@ -14,7 +14,7 @@
       </div>
     </div>
   </div>
-</template>☺☺
+</template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
@@ -36,7 +36,7 @@ export default defineComponent({
     };
   },
   computed: {
-    filteredGames() {
+    filteredGames() { 
       return this.games.filter(game =>
         game.title.toLowerCase().includes(this.searchQuery.toLowerCase())
       );
