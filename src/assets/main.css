@@ -311,3 +311,13 @@ border-radius: 30px !important;
     border-radius: 30px;
     transition: 0.2s ease-in-out !important;
 }
+
+.order-container{
+    background-color: #f2fed1 !important;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 1);
+    border-radius: 15px !important;
+    border: solid 1px #000000 !important;
+    padding: 30px;
+    margin-bottom: 75vh;
+    
+}
