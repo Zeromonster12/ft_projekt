@@ -9,7 +9,7 @@
         <h1>{{ game.title }}</h1>
         <div class="game-details mt-5">
           <p><strong>Genre:</strong> {{ game.genre }}</p>
-          <p><strong>Price:</strong> ${{ game.price }}</p>
+          <p><strong>Price:</strong> €{{ game.price }}</p>
           <p><strong>Rating:</strong> {{ game.rating }}</p>
           <p><strong>Release Date:</strong> {{ game.releaseDate }}</p>
           <button @click="cartStore.addItem(game)" class="btn btn-add-to-cart mt-4">Add to Cart</button>

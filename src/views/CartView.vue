@@ -7,7 +7,7 @@
       <div v-if="cartStore.items.length > 0" class="col-12 col-md-4">
         <div class="p-3 cart-summary">
           <p class="h5 mb-5"><strong>Total Price:</strong> ${{ cartStore.totalPrice }}</p>
-          <button @click="checkout" class="btn btn-checkout mb-2 w-100">Proceed to Checkout</button>
+          <button @click="cartStore.createOrder" class="btn btn-checkout mb-2 w-100">Proceed to Checkout</button>
           <button @click="cartStore.clearCart" class="btn btn-clear-cart w-100">Empty Cart</button>
         </div>
       </div>
@@ -36,9 +36,6 @@ export default defineComponent({
     };
   },
   methods: {
-    checkout() {
-      alert('Proceeding to checkout...');
-    }
   }
 });
 </script>

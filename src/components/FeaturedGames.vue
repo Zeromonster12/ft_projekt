@@ -11,7 +11,7 @@
           <img :src="`/images/${game.image}`" class="card-img-top" alt="Game image" />
           <div class="card-body">
             <h5>{{ game.title }}</h5>
-            <p>Price: ${{ game.price }}</p>
+            <p>Price: €{{ game.price }}</p>
           </div>
         </div>
       </div>

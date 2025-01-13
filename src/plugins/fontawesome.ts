@@ -1,8 +1,7 @@
-// filepath: /e:/ft_projekt/src/plugins/fontawesome.ts
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faHome, faGamepad, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faGamepad, faShoppingCart, faClipboard } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faHome, faGamepad, faShoppingCart);
+library.add(faHome, faGamepad, faShoppingCart, faClipboard);
 
 export default FontAwesomeIcon;

@@ -9,12 +9,12 @@
           class="form-control search-bar"
         />
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" v-for="game in filteredGames" :key="game.id">
+      <div class="col-12 col-sm-  6 col-md-4 col-lg-3 mb-4" v-for="game in filteredGames" :key="game.id">
         <GameCard @click="showGameDetails(game)" :game="game" />
       </div>
     </div>
   </div>
-</template>
+</template>☺☺
 
 <script lang="ts">
 import { defineComponent } from 'vue';

@@ -18,6 +18,11 @@
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <router-link class="nav-link mb-2 mb-lg-0" to="/orders">
+              <font-awesome-icon icon="clipboard" class="px-1"/>Orders
+            </router-link>
+          </li>
           <li class="nav-item position-relative">
             <router-link class="nav-link" to="/cart">
               <font-awesome-icon icon="shopping-cart" />

@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import GamesView from '@/views/GamesView.vue';
 import CartView from '@/views/CartView.vue';
 import GameDetailView from '@/views/GameDetailView.vue';
+import OrdersView from '@/views/OrdersView.vue';
 
 const routes = [
   {
@@ -26,6 +27,15 @@ const routes = [
     name: 'cart',
     component: CartView,
   },
+  {
+    path: '/orders',
+    name: 'orders',
+    component: OrdersView,
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: { name: 'home' },
+  }
 ];
 
 const router = createRouter({
