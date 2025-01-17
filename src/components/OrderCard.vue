@@ -4,7 +4,7 @@
     <p><strong>Order ID:</strong> {{ order.id }}</p>
     <p>
       <strong>Status: </strong>
-      <span :style="{ color: order.status === 'pending' ? 'red' : 'inherit' }">
+      <span :style="{ color: getStatusColor(order.status) }">
         {{ order.status }}
       </span>
     </p>
@@ -15,11 +15,14 @@
         {{ item.title }} - {{ item.price }}€
       </li>
     </ul>
+    <button class="completeBtn" @click="cartStore.updateOrderStatus(order.id, 'complete')">Mark as Complete</button>
+    <button class="cancelledBtn" @click="cartStore.updateOrderStatus(order.id, 'cancelled')">Cancel Order</button>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue';
+import { useCartStore } from '@/stores/CartStore';
 
 export default defineComponent({
   name: 'OrderCard',
@@ -27,6 +30,22 @@ export default defineComponent({
     order: {
       type: Object,
       required: true
+    }
+  },
+  data() {
+    return {
+      cartStore: useCartStore()
+    };
+  },
+  methods: {
+    getStatusColor(status) {
+      if (status === 'pending') {
+        return 'orange';
+      } else if (status === 'complete') {
+        return 'green';
+      } else if (status === 'cancelled') {
+        return 'red';
+      }
     }
   }
 });

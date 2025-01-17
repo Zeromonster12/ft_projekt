@@ -8,7 +8,7 @@
               <img :src="`/images/${item.image}`" alt="Game image" class="img-thumbnail me-3" width="50">
               <div>
                 <h5 class="mb-1">{{ item.title }}</h5>
-                <small>${{ item.price }}</small>
+                <small>{{ item.price }} €</small>
               </div>
             </div>
             <button @click="removeItem(index)" class="btn btn-remove-item btn-sm">Remove</button>

@@ -48,6 +48,13 @@ export const useCartStore = defineStore({
     },
     loadOrders() {
       this.orders = JSON.parse(localStorage.getItem('orders') || '[]');
+    },
+    updateOrderStatus(orderId, status) {
+      const order = this.orders.find(order => order.id === orderId);
+      if (order) {
+        order.status = status;
+        localStorage.setItem('orders', JSON.stringify(this.orders));
+      }
     }
   }
 });
