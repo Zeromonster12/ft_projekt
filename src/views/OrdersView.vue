@@ -2,7 +2,7 @@
   <main class="container mt-5">
     <div class="row w-100">
       <div class="col-12">
-        <div v-if="orders.length === 0" class="alert alert-warning">
+        <div v-if="orders.length === 0" class="alert alert-empty-cart">
           No orders found.
         </div>
         <div v-else>
